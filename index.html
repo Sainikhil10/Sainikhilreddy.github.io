@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainikhil Reddy - Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .header-bg {
+            background-color: #2c3e50; /* Dark blue-grey */
+        }
+        .accent-color {
+            color: #3498db; /* Blue */
+        }
+        .accent-bg {
+            background-color: #3498db; /* Blue */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #3498db;
+            border-radius: 2px;
+        }
+        .skill-badge {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0f2f5;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="header-bg text-white py-12 px-4 shadow-lg">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-3">Sainikhil Reddy</h1>
+            <p class="text-xl font-light opacity-90">Full Stack Software Engineer | Java, Spring Boot, ReactJS Expert</p>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <!-- Updated "View Projects" to "My Experience" and linked to #experience -->
+                <a href="#experience" class="btn bg-white text-gray-800 hover:bg-gray-100">My Experience</a>
+                <!-- Download Resume Button: Updated to link directly to the PDF file in the same directory -->
+                <a href="Resume_Sainikhil_Reddy.pdf" download="Sainikhil_Reddy_Resume.pdf" class="btn bg-white text-gray-800 hover:bg-gray-100">Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto py-12 px-4">
+
+        <!-- Professional Summary Section -->
+        <section id="summary" class="mb-16">
+            <h2 class="text-4xl font-bold section-title mb-8">Professional Summary</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <p class="text-lg leading-relaxed mb-4">
+                    With 7+ years of progressive experience in software development, I possess a strong foundation in Java, Spring Boot, and modern front-end frameworks like ReactJS and Redux. My expertise lies in designing and building scalable, microservice-based enterprise applications.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    I am proficient in developing reusable and responsive front-end components, integrating messaging systems like Apache Kafka, and leveraging CI/CD tools for automated deployments. My experience spans across relational and NoSQL databases, cloud platforms (AWS), and secure application development practices, ensuring robust and compliant solutions. I thrive in Agile environments, contributing across the full development lifecycle from requirement analysis to production support.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="mb-16">
+            <h2 class="text-4xl font-bold section-title mb-8">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-4 accent-color">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">Python</span>
+                    </div>
+                </div>
+
+                <!-- Frontend Technologies -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-4 accent-color">Frontend Technologies</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">ReactJS</span>
+                        <span class="skill-badge">Redux</span>
+                        <span class="skill-badge">Bootstrap</span>
+                        <span class="skill-badge">AJAX</span>
+                        <span class="skill-badge">JSP</span>
+                    </div>
+                </div>
+
+                <!-- Backend Technologies -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-4 accent-color">Backend Technologies</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">Spring Boot</span>
+                        <span class="skill-badge">Spring MVC</span>
+                        <span class="skill-badge">Spring Security</span>
+                        <span class="skill-badge">Hibernate (JPA)</span>
+                        <span class="skill-badge">RESTful APIs</span>
+                        <span class="skill-badge">GraphQL</span>
+                        <span class="skill-badge">Microservices</span>
+                    </div>
+                </div>
+
+                <!-- Database Technologies -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-4 accent-color">Database Technologies</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">Oracle</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Cloud Technologies -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-4 accent-color">Cloud Technologies</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">AWS (EC2, S3, RDS, Lambda, CloudWatch, API Gateway)</span>
+                        <span class="skill-badge">Amazon EKS</span>
+                    </div>
+                </div>
+
+                <!-- CI/CD & Containerization -->
+                <div class="card p-6">
+                    <h3 class="text-2xl font-semibold mb-4 accent-color">CI/CD & Containerization</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">Helm</span>
+                        <span class="skill-badge">Jenkins</span>
+                        <span class="skill-badge">GitHub Actions</span>
+                        <span class="skill-badge">GitLab CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- Other Relevant Skills -->
+                <div class="card p-6 col-span-1 md:col-span-2 lg:col-span-3">
+                    <h3 class="text-2xl font-semibold mb-4 accent-color">Other Key Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge">Apache Kafka</span>
+                        <span class="skill-badge">JMS</span>
+                        <span class="skill-badge">OAuth2.0</span>
+                        <span class="skill-badge">JWT</span>
+                        <span class="skill-badge">ELK Stack</span>
+                        <span class="skill-badge">Prometheus</span>
+                        <span class="skill-badge">Grafana</span>
+                        <span class="skill-badge">JUnit</span>
+                        <span class="skill-badge">Mockito</span>
+                        <span class="skill-badge">Selenium</span>
+                        <span class="skill-badge">Swagger/OpenAPI</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Agile (Scrum)</span>
+                        <span class="skill-badge">Microservices Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-4xl font-bold section-title mb-8">Professional Experience</h2>
+
+            <!-- Centene Corporation -->
+            <div class="card p-8 mb-8">
+                <h3 class="text-2xl font-bold accent-color">Java Full Stack Developer</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-2">Centene Corporation</p>
+                <p class="text-gray-600 mb-4">Nov 2024 – Present</p>
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                    <li>Designed and implemented end-to-end web applications using Java 17, Spring Boot 3, and ReactJS for enterprise healthcare systems.</li>
+                    <li>Built scalable microservices architecture using Spring Cloud, Eureka, and Zuul API Gateway.</li>
+                    <li>Developed responsive UI components with ReactJS and Redux Toolkit for state management.</li>
+                    <li>Integrated Spring Security with OAuth2.0 and JWT tokens for secure authentication and role-based access control.</li>
+                    <li>Utilized Hibernate ORM and JPA for seamless interaction with Oracle and PostgreSQL databases.</li>
+                    <li>Developed Kafka producers and consumers for real-time data processing across insurance claims, policy updates, and member eligibility.</li>
+                    <li>Used Docker for containerizing microservices and deployed them using Kubernetes on Amazon EKS.</li>
+                    <li>Implemented CI/CD pipelines using Jenkins, GitHub Actions, and Helm charts to automate build, testing, and deployment workflows.</li>
+                    <li>Leveraged AWS services including EC2, S3, RDS, CloudWatch, and Lambda for hosting, monitoring, and serverless computing.</li>
+                    <li>Applied TDD practices with JUnit 5 and Mockito, writing unit and integration test suites to ensure robust code quality.</li>
+                </ul>
+            </div>
+
+            <!-- Blue Cross Blue Shield (BCBS) -->
+            <div class="card p-8 mb-8">
+                <h3 class="text-2xl font-bold accent-color">Java Full Stack Developer</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-2">Blue Cross Blue Shield (BCBS)</p>
+                <p class="text-gray-600 mb-4">Aug 2023 – Oct 2024</p>
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                    <li>Engineered and maintained scalable, high-performance full-stack healthcare applications using Java 11, Spring Boot, ReactJS, and Redux.</li>
+                    <li>Designed and developed secure, RESTful and GraphQL APIs for claims processing, member eligibility, and provider search functionalities.</li>
+                    <li>Implemented OAuth2.0 and JWT for securing APIs, ensuring compliance with HIPAA regulations.</li>
+                    <li>Built modular ReactJS components using functional programming with hooks and integrated Material-UI for clean, responsive UIs.</li>
+                    <li>Used Apache Kafka for asynchronous messaging across distributed microservices.</li>
+                    <li>Developed PostgreSQL database schemas, optimized complex joins and indexing for high-volume data retrieval.</li>
+                    <li>Integrated MongoDB for document-based storage of provider network metadata and claim attachments.</li>
+                    <li>Set up CI/CD pipelines using Jenkins, GitLab CI/CD, and Docker to streamline builds, testing, and deployment across multiple cloud environments.</li>
+                    <li>Leveraged Kubernetes and Helm for orchestration and deployment of containerized microservices.</li>
+                    <li>Configured monitoring and logging using ELK stack (Elasticsearch, Logstash, Kibana), Prometheus, and Grafana.</li>
+                    <li>Created and executed unit and integration tests using JUnit 5, Mockito, and REST-assured.</li>
+                    <li>Worked closely with QA teams using Selenium and Cucumber to automate end-to-end UI and functional testing.</li>
+                </ul>
+            </div>
+
+            <!-- 7-Eleven -->
+            <div class="card p-8 mb-8">
+                <h3 class="text-2xl font-bold accent-color">Java Full Stack Developer</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-2">7-Eleven</p>
+                <p class="text-gray-600 mb-4">Dec 2021 – July 2023</p>
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                    <li>Designed dynamic and reusable front-end components using ReactJS, enabling responsive and interactive user interfaces.</li>
+                    <li>Integrated Redux for efficient state management and seamless data flow across components.</li>
+                    <li>Built RESTful services with Spring Boot to support various retail operations such as inventory, billing, and promotions.</li>
+                    <li>Optimized SQL queries and PostgreSQL indexing to enhance backend data performance.</li>
+                    <li>Collaborated with DevOps teams to implement GitLab CI/CD pipelines, enabling continuous integration and delivery across environments.</li>
+                    <li>Containerized services using Docker, facilitating scalable deployment and consistent environments.</li>
+                    <li>Worked in Agile Scrum methodology, contributing to sprint planning, daily stand-ups, and retrospectives.</li>
+                    <li>Collaborated with business analysts to translate business requirements into technical tasks and feature development.</li>
+                    <li>Conducted unit testing with JUnit and integration testing with Postman to ensure stability and reliability of APIs.</li>
+                    <li>Participated in code reviews and refactored existing code for maintainability and performance improvements.</li>
+                    <li>Assisted in migrating legacy modules to modern microservices architecture to improve scalability and maintainability.</li>
+                </ul>
+            </div>
+
+            <!-- EPAM Systems (Software Engineering) -->
+            <div class="card p-8 mb-8">
+                <h3 class="text-2xl font-bold accent-color">Software Engineering</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-2">EPAM Systems</p>
+                <p class="text-gray-600 mb-4">June 2020 – Nov 2021</p>
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                    <li>Developed and maintained robust backend modules using Java, Spring MVC, and Hibernate, contributing to scalable enterprise applications.</li>
+                    <li>Designed and implemented RESTful APIs for seamless communication between distributed services and client applications.</li>
+                    <li>Integrated and consumed third-party APIs, including authentication, payment gateways, and reporting services, enhancing system functionality.</li>
+                    <li>Optimized and wrote complex stored procedures, functions, and triggers in MySQL to support high-volume business operations.</li>
+                    <li>Applied design patterns such as DAO, Singleton, and Factory for clean and maintainable code architecture.</li>
+                    <li>Collaborated with frontend teams to define API contracts and troubleshoot integration issues, ensuring seamless UI/UX experience.</li>
+                    <li>Participated in Agile ceremonies including sprint planning, retrospectives, and daily stand-ups to ensure alignment and on-time delivery.</li>
+                    <li>Conducted unit and integration testing using JUnit and Mockito, ensuring the reliability of business-critical services.</li>
+                    <li>Implemented logging and monitoring mechanisms using Log4j and ELK Stack for enhanced visibility and issue resolution in production.</li>
+                    <li>Managed source code and collaborative development using Git and GitLab, following branching strategies like GitFlow.</li>
+                    <li>Assisted in performance tuning and refactoring of legacy modules, reducing API response time and enhancing system stability.</li>
+                </ul>
+            </div>
+
+            <!-- EPAM Systems (Software Engineering Intern) -->
+            <div class="card p-8 mb-8">
+                <h3 class="text-2xl font-bold accent-color">Software Engineering Intern</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-2">EPAM Systems</p>
+                <p class="text-gray-600 mb-4">Jan 2019 – May 2020</p>
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                    <li>Assisted in the development of enterprise-level Java applications using Spring Boot and Hibernate for backend functionality.</li>
+                    <li>Contributed to building RESTful APIs and integrating them with frontend modules to support business requirements.</li>
+                    <li>Wrote and maintained DAO classes and service layers for efficient interaction with MySQL/PostgreSQL databases.</li>
+                    <li>Participated in debugging and resolving defects reported during QA and UAT phases to ensure product quality.</li>
+                    <li>Implemented unit tests using JUnit and Mockito to validate service layer logic and ensure high code coverage.</li>
+                    <li>Supported senior developers in conducting code reviews and applied suggested improvements to enhance code maintainability.</li>
+                    <li>Utilized Git for version control and participated in code merge and conflict resolution in collaborative projects.</li>
+                    <li>Involved in documentation of technical tasks, feature specifications, and sprint progress for team alignment.</li>
+                    <li>Assisted in the integration of third-party APIs and external systems to extend platform capabilities.</li>
+                    <li>Took part in daily Agile stand-ups and sprint retrospectives to share updates and learn team collaboration practices.</li>
+                    <li>Collaborated in the optimization of SQL queries and database indexing to improve application performance.</li>
+                </ul>
+            </div>
+
+            <!-- Sears Holdings (Software Engineering Intern) -->
+            <div class="card p-8">
+                <h3 class="text-2xl font-bold accent-color">Software Engineering Intern</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-2">Sears Holdings</p>
+                <p class="text-gray-600 mb-4">June 2018 – Dec 2018</p>
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                    <li>Supported front-end development using JavaScript, HTML, and CSS to create interactive and responsive user interfaces.</li>
+                    <li>Assisted in building backend components using Java and Spring MVC, contributing to a modular and scalable architecture.</li>
+                    <li>Collaborated with senior developers to understand the complete software development lifecycle from requirement gathering to deployment.</li>
+                    <li>Participated in writing and debugging unit test cases using JUnit, ensuring code reliability.</li>
+                    <li>Contributed to UI testing efforts, verifying alignment with design specifications and enhancing user experience.</li>
+                    <li>Gained hands-on experience with version control tools like Git for managing code repositories and collaborating in a team environment.</li>
+                    <li>Worked on integrating RESTful web services into front-end applications for dynamic content loading.</li>
+                    <li>Analyzed and fixed bugs reported by the QA team during testing cycles, improving application stability.</li>
+                    <li>Involved in daily stand-up meetings and sprint planning as part of Agile development practices.</li>
+                    <li>Documented workflows, user stories, and test cases to support future development and knowledge sharing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-16">
+            <h2 class="text-4xl font-bold section-title mb-8">Education</h2>
+            <div class="card p-8">
+                <h3 class="text-2xl font-bold accent-color">Master of Science, Information Systems</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-2">Central Michigan University, USA</p>
+                <h3 class="text-2xl font-bold accent-color mt-6">Bachelors in Technology, Information Technology</h3>
+                <p class="text-xl font-semibold text-gray-700">Institute of Aeronautical Engineering, India</p>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="mb-16">
+            <h2 class="text-4xl font-bold section-title mb-8">Certifications</h2>
+            <div class="card p-8">
+                <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                    <li>Certified Pega System Architect (CSA)</li>
+                    <li>Certified Pega Senior System Architect (CSSA)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-16">
+            <h2 class="text-4xl font-bold section-title mb-8">Contact</h2>
+            <div class="card p-8 text-center">
+                <p class="text-lg mb-4">Feel free to reach out to discuss potential opportunities or collaborations!</p>
+                <p class="text-xl font-semibold accent-color">
+                    <a href="mailto:pannalasainikhilreddy@gmail.com" class="underline hover:no-underline">pannalasainikhilreddy@gmail.com</a>
+                </p>
+                <p class="text-xl font-semibold accent-color mt-2">
+                    <a href="tel:+13134443187" class="underline hover:no-underline">+1 (313) 444-3187</a>
+                </p>
+                <div class="mt-6 flex justify-center space-x-4">
+                    <!-- Updated LinkedIn and GitHub links -->
+                    <a href="https://www.linkedin.com/in/sainikhilreddy-pannala/" target="_blank" class="text-gray-600 hover:text-gray-900 transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Sainikhil10" target="_blank" class="text-gray-600 hover:text-gray-900 transition duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.47.087.64-.204.64-.455 0-.226-.007-.975-.011-1.912-2.782.603-3.37-1.34-3.37-1.34-.454-1.154-1.107-1.46-1.107-1.46-.908-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.89 1.529 2.336 1.087 2.903.83.09-.642.349-1.087.635-1.338-2.22-.253-4.555-1.113-4.555-4.953 0-1.096.39-1.988 1.03-2.69-.103-.253-.448-1.274.097-2.659 0 0 .84-.27 2.75 1.025.798-.222 1.649-.333 2.5-.337.85.004 1.702.115 2.5.337 1.909-1.296 2.747-1.025 2.747-1.025.546 1.385.201 2.406.1 2.659.64.702 1.026 1.594 1.026 2.69 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .253.17.545.645.454C21.13 20.197 24 16.442 24 12.017 24 6.484 19.522 2 12 2Z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="header-bg text-white py-8 px-4 text-center">
+        <p>&copy; 2024 Sainikhil Reddy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
